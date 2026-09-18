@@ -2,52 +2,83 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard Previsioni - Minori_Villa</title>
+    <title>Dashboard</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        table { border-collapse: collapse; width: 100%; }
-        th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
-        th { background-color: #f4f4f4; color: #0d47a1; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #484646; 
+            color: white; 
+            font-size: 12px;
+            overflow: hidden; /* Nasconde scrollbar se si adatta perfettamente */
+        }
+        #table-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: stretch;
+            justify-content: stretch;
+        }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            table-layout: fixed; 
+            height: 100%;
+        }
+        th, td { 
+            border: 1px solid #6c6c6c; 
+            padding: 4px; 
+            text-align: center; 
+            word-wrap: break-word; 
+            vertical-align: middle;
+        }
+        th { background-color: #333333; color: white; font-weight: bold; font-size: 11px; }
+        svg { width: 22px; height: 22px; display: block; margin: 0 auto; }
     </style>
 </head>
 <body>
-    <div id="table-container">Caricamento dati...</div>
+    <div id="table-container">Caricamento...</div>
 
     <script>
+        const faceGreen = '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#4caf50" /><circle cx="35" cy="40" r="5" fill="white" /><circle cx="65" cy="40" r="5" fill="white" /><path d="M 30 65 Q 50 85 70 65" stroke="white" stroke-width="6" stroke-linecap="round" fill="none" /></svg>';
+        const faceYellow = '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#ffb300" /><circle cx="35" cy="40" r="5" fill="white" /><circle cx="65" cy="40" r="5" fill="white" /><path d="M 35 65 L 65 65" stroke="white" stroke-width="6" stroke-linecap="round" fill="none" /></svg>';
+        const faceRed = '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#e53935" /><circle cx="35" cy="40" r="5" fill="white" /><circle cx="65" cy="40" r="5" fill="white" /><path d="M 30 75 Q 50 55 70 75" stroke="white" stroke-width="6" stroke-linecap="round" fill="none" /></svg>';
+
         fetch('dashboard_data.json')
             .then(response => response.json())
             .then(data => {
                 const siteData = data['Minori_Villa'];
                 if (!siteData || siteData.length === 0) {
-                    document.getElementById('table-container').innerHTML = '<p style="padding:20px;">Nessun dato disponibile.</p>';
+                    document.getElementById('table-container').innerHTML = '<div style="padding:10px;">Nessun dato.</div>';
                     return;
                 }
                 
                 let days = [];
                 for (let s of siteData) {
                     if (s.forecast && s.forecast.length > 0) {
-                        days = s.forecast.map(f => f.day_str);
+                        days = s.forecast.map(f => f.day_str.replace('<br/>', ' '));
                         break;
                     }
                 }
                 
                 let html = '<table>';
-                html += '<tr><th>Nome Stanza</th><th>ID Sensore</th>';
+                html += '<tr><th style="width:25%;">Stanza</th><th style="width:25%;">Sensore</th>';
                 days.forEach(d => html += '<th>' + d + '</th>');
                 html += '</tr>';
                 
                 siteData.forEach(sensor => {
                     html += '<tr>';
                     html += '<td>' + sensor.room + '</td>';
-                    html += '<td>' + sensor.sensor_id + '</td>';
+                    html += '<td style="font-size:10px; color:#ccc;">' + sensor.sensor_id + '</td>';
                     
                     if (sensor.forecast && sensor.forecast.length > 0) {
                         sensor.forecast.forEach(f => {
-                            let emoji = f.status === 'green' ? '🟢' : (f.status === 'yellow' ? '🟡' : '🔴');
-                            html += '<td style="font-size: 1.5em;">' + emoji + '</td>';
+                            let face = f.status === 'green' ? faceGreen : (f.status === 'yellow' ? faceYellow : faceRed);
+                            html += '<td>' + face + '</td>';
                         });
                     } else {
-                        html += '<td colspan="7">Dati non disponibili</td>';
+                        html += '<td colspan="7">N.D.</td>';
                     }
                     html += '</tr>';
                 });
@@ -56,7 +87,7 @@
                 document.getElementById('table-container').innerHTML = html;
             })
             .catch(err => {
-                document.getElementById('table-container').innerHTML = '<p style="padding:20px;">Errore nel caricamento dei dati: ' + err + '</p>';
+                document.getElementById('table-container').innerHTML = '<div style="padding:10px;">Errore: ' + err + '</div>';
             });
     </script>
 </body>
