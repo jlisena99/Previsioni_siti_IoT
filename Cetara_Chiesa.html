@@ -11,30 +11,25 @@
             background-color: #484646; 
             color: white; 
             font-size: 12px;
-            overflow: hidden; /* Nasconde scrollbar se si adatta perfettamente */
         }
         #table-container {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: stretch;
-            justify-content: stretch;
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
         table { 
             border-collapse: collapse; 
             width: 100%; 
-            table-layout: fixed; 
-            height: 100%;
         }
         th, td { 
             border: 1px solid #6c6c6c; 
-            padding: 4px; 
+            padding: 6px; 
             text-align: center; 
-            word-wrap: break-word; 
             vertical-align: middle;
+            white-space: nowrap;
         }
         th { background-color: #333333; color: white; font-weight: bold; font-size: 11px; }
-        svg { width: 22px; height: 22px; display: block; margin: 0 auto; }
+        svg { width: 20px; height: 20px; display: block; margin: 0 auto; min-width: 20px; }
     </style>
 </head>
 <body>
@@ -63,7 +58,7 @@
                 }
                 
                 let html = '<table>';
-                html += '<tr><th style="width:25%;">Stanza</th><th style="width:25%;">Sensore</th>';
+                html += '<tr><th>Stanza</th><th>Sensore</th>';
                 days.forEach(d => html += '<th>' + d + '</th>');
                 html += '</tr>';
                 
