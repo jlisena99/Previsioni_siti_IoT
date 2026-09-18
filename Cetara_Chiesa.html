@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <title>Dashboard Previsioni - Cetara_Chiesa</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #0d47a1; }
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        table { border-collapse: collapse; width: 100%; }
         th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
-        th { background-color: #f4f4f4; }
-        .green { background-color: #c8e6c9; color: #1b5e20; font-weight: bold; }
-        .yellow { background-color: #fff9c4; color: #f57f17; font-weight: bold; }
-        .red { background-color: #ffcdd2; color: #b71c1c; font-weight: bold; }
+        th { background-color: #f4f4f4; color: #0d47a1; }
     </style>
 </head>
 <body>
-    <h1>Previsioni a 7 giorni - Cetara_Chiesa</h1>
     <div id="table-container">Caricamento dati...</div>
 
     <script>
@@ -24,7 +19,7 @@
             .then(data => {
                 const siteData = data['Cetara_Chiesa'];
                 if (!siteData || siteData.length === 0) {
-                    document.getElementById('table-container').innerHTML = '<p>Nessun dato disponibile.</p>';
+                    document.getElementById('table-container').innerHTML = '<p style="padding:20px;">Nessun dato disponibile.</p>';
                     return;
                 }
                 
@@ -37,19 +32,19 @@
                 }
                 
                 let html = '<table>';
-                html += '<tr><th>ID Sito</th><th>Nome Stanza</th>';
+                html += '<tr><th>Nome Stanza</th><th>ID Sensore</th>';
                 days.forEach(d => html += '<th>' + d + '</th>');
                 html += '</tr>';
                 
                 siteData.forEach(sensor => {
                     html += '<tr>';
-                    html += '<td>Cetara_Chiesa</td>';
                     html += '<td>' + sensor.room + '</td>';
+                    html += '<td>' + sensor.sensor_id + '</td>';
                     
-                    if (sensor.forecast.length > 0) {
+                    if (sensor.forecast && sensor.forecast.length > 0) {
                         sensor.forecast.forEach(f => {
-                            let colorClass = f.status === 'green' ? 'green' : (f.status === 'yellow' ? 'yellow' : 'red');
-                            html += '<td class="' + colorClass + '">' + f.status.toUpperCase() + '</td>';
+                            let emoji = f.status === 'green' ? '🟢' : (f.status === 'yellow' ? '🟡' : '🔴');
+                            html += '<td style="font-size: 1.5em;">' + emoji + '</td>';
                         });
                     } else {
                         html += '<td colspan="7">Dati non disponibili</td>';
@@ -61,7 +56,7 @@
                 document.getElementById('table-container').innerHTML = html;
             })
             .catch(err => {
-                document.getElementById('table-container').innerHTML = '<p>Errore nel caricamento dei dati: ' + err + '</p>';
+                document.getElementById('table-container').innerHTML = '<p style="padding:20px;">Errore nel caricamento dei dati: ' + err + '</p>';
             });
     </script>
 </body>
