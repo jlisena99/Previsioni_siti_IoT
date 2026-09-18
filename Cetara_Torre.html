@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Previsioni - Cetara_Torre</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #0d47a1; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+        th { background-color: #f4f4f4; }
+        .green { background-color: #c8e6c9; color: #1b5e20; font-weight: bold; }
+        .yellow { background-color: #fff9c4; color: #f57f17; font-weight: bold; }
+        .red { background-color: #ffcdd2; color: #b71c1c; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Previsioni a 7 giorni - Cetara_Torre</h1>
+    <div id="table-container">Caricamento dati...</div>
+
+    <script>
+        fetch('dashboard_data.json')
+            .then(response => response.json())
+            .then(data => {
+                const siteData = data['Cetara_Torre'];
+                if (!siteData || siteData.length === 0) {
+                    document.getElementById('table-container').innerHTML = '<p>Nessun dato disponibile.</p>';
+                    return;
+                }
+                
+                let days = [];
+                for (let s of siteData) {
+                    if (s.forecast && s.forecast.length > 0) {
+                        days = s.forecast.map(f => f.day_str);
+                        break;
+                    }
+                }
+                
+                let html = '<table>';
+                html += '<tr><th>ID Sito</th><th>Nome Stanza</th>';
+                days.forEach(d => html += '<th>' + d + '</th>');
+                html += '</tr>';
+                
+                siteData.forEach(sensor => {
+                    html += '<tr>';
+                    html += '<td>Cetara_Torre</td>';
+                    html += '<td>' + sensor.room + '</td>';
+                    
+                    if (sensor.forecast.length > 0) {
+                        sensor.forecast.forEach(f => {
+                            let colorClass = f.status === 'green' ? 'green' : (f.status === 'yellow' ? 'yellow' : 'red');
+                            html += '<td class="' + colorClass + '">' + f.status.toUpperCase() + '</td>';
+                        });
+                    } else {
+                        html += '<td colspan="7">Dati non disponibili</td>';
+                    }
+                    html += '</tr>';
+                });
+                
+                html += '</table>';
+                document.getElementById('table-container').innerHTML = html;
+            })
+            .catch(err => {
+                document.getElementById('table-container').innerHTML = '<p>Errore nel caricamento dei dati: ' + err + '</p>';
+            });
+    </script>
+</body>
+</html>
