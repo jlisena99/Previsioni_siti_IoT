@@ -53,7 +53,7 @@
         {
           "date": "2026-09-19",
           "day_str": "Sab 19/09",
-          "status": "red"
+          "status": "yellow"
         },
         {
           "date": "2026-09-20",
@@ -78,7 +78,7 @@
         {
           "date": "2026-09-24",
           "day_str": "Gio 24/09",
-          "status": "yellow"
+          "status": "green"
         }
       ]
     }
