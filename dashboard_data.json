@@ -5,38 +5,38 @@
       "room": "Sala Principale (Ingresso)",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
           "status": "green"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
+          "status": "yellow"
+        },
+        {
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
+          "status": "yellow"
+        },
+        {
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
           "status": "green"
         },
         {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "green"
         },
         {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
           "status": "green"
         },
         {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
-          "status": "green"
-        },
-        {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
-          "status": "green"
-        },
-        {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
           "status": "green"
         }
       ]
@@ -46,38 +46,38 @@
       "room": "Sala Principale (Fondo Sala)",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
           "status": "green"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
+          "status": "yellow"
+        },
+        {
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
+          "status": "yellow"
+        },
+        {
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
           "status": "green"
         },
         {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "green"
         },
         {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
           "status": "green"
         },
         {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
-          "status": "green"
-        },
-        {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
-          "status": "green"
-        },
-        {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
           "status": "green"
         }
       ]
@@ -89,38 +89,38 @@
       "room": "Sala Consiliare",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
           "status": "green"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
           "status": "green"
         },
         {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
           "status": "green"
         },
         {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
           "status": "green"
         },
         {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "green"
         },
         {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
           "status": "green"
         },
         {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
           "status": "green"
         }
       ]
@@ -132,38 +132,38 @@
       "room": "Stenditoio",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
           "status": "red"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
           "status": "red"
         },
         {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
           "status": "red"
         },
         {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
           "status": "red"
         },
         {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "red"
         },
         {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
           "status": "red"
         },
         {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
           "status": "red"
         }
       ]
@@ -173,38 +173,38 @@
       "room": "Sala Espositiva",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
           "status": "green"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
           "status": "green"
         },
         {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
           "status": "green"
         },
         {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
           "status": "green"
         },
         {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "green"
         },
         {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
           "status": "green"
         },
         {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
           "status": "green"
         }
       ]
@@ -216,38 +216,38 @@
       "room": "Sala Settecentesca",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
           "status": "green"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
           "status": "green"
         },
         {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
           "status": "green"
         },
         {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
           "status": "green"
         },
         {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "green"
         },
         {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
           "status": "green"
         },
         {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
           "status": "green"
         }
       ]
@@ -257,39 +257,39 @@
       "room": "Sala della Roccia",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
-          "status": "green"
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
+          "status": "red"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
-          "status": "green"
-        },
-        {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
-          "status": "green"
-        },
-        {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
-          "status": "green"
-        },
-        {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
           "status": "yellow"
         },
         {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
+          "status": "yellow"
+        },
+        {
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
           "status": "green"
         },
         {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "green"
+        },
+        {
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
+          "status": "green"
+        },
+        {
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
+          "status": "yellow"
         }
       ]
     }
@@ -300,38 +300,38 @@
       "room": "Navata / Abside",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
           "status": "green"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
           "status": "green"
         },
         {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
           "status": "green"
         },
         {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
+          "status": "yellow"
+        },
+        {
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "green"
         },
         {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
           "status": "green"
         },
         {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
-          "status": "green"
-        },
-        {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
           "status": "green"
         }
       ]
@@ -343,38 +343,38 @@
       "room": "Salone Grande",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
           "status": "red"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
           "status": "red"
         },
         {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
           "status": "red"
         },
         {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
           "status": "red"
         },
         {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "red"
         },
         {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
           "status": "red"
         },
         {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
           "status": "red"
         }
       ]
@@ -384,38 +384,38 @@
       "room": "Triclinio Ninfeo",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
           "status": "red"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
           "status": "red"
         },
         {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
           "status": "red"
         },
         {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
           "status": "red"
         },
         {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "red"
         },
         {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
           "status": "red"
         },
         {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
           "status": "red"
         }
       ]
@@ -425,38 +425,38 @@
       "room": "Cubiculum",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
           "status": "red"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
           "status": "red"
         },
         {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
           "status": "red"
         },
         {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
           "status": "red"
         },
         {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "red"
         },
         {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
           "status": "red"
         },
         {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
           "status": "red"
         }
       ]
@@ -466,38 +466,38 @@
       "room": "Apodyterium",
       "forecast": [
         {
-          "date": "2026-09-29",
-          "day_str": "Mar 29/09",
+          "date": "2026-10-07",
+          "day_str": "Mer 07/10",
           "status": "red"
         },
         {
-          "date": "2026-09-30",
-          "day_str": "Mer 30/09",
+          "date": "2026-10-08",
+          "day_str": "Gio 08/10",
           "status": "red"
         },
         {
-          "date": "2026-10-01",
-          "day_str": "Gio 01/10",
+          "date": "2026-10-09",
+          "day_str": "Ven 09/10",
           "status": "red"
         },
         {
-          "date": "2026-10-02",
-          "day_str": "Ven 02/10",
+          "date": "2026-10-10",
+          "day_str": "Sab 10/10",
           "status": "red"
         },
         {
-          "date": "2026-10-03",
-          "day_str": "Sab 03/10",
+          "date": "2026-10-11",
+          "day_str": "Dom 11/10",
           "status": "red"
         },
         {
-          "date": "2026-10-04",
-          "day_str": "Dom 04/10",
+          "date": "2026-10-12",
+          "day_str": "Lun 12/10",
           "status": "red"
         },
         {
-          "date": "2026-10-05",
-          "day_str": "Lun 05/10",
+          "date": "2026-10-13",
+          "day_str": "Mar 13/10",
           "status": "red"
         }
       ]
