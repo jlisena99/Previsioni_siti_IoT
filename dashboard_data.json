@@ -7,17 +7,17 @@
         {
           "date": "2026-11-12",
           "day_str": "Gio 12/11",
-          "status": "green"
+          "status": "yellow"
         },
         {
           "date": "2026-11-13",
           "day_str": "Ven 13/11",
-          "status": "green"
+          "status": "yellow"
         },
         {
           "date": "2026-11-14",
           "day_str": "Sab 14/11",
-          "status": "green"
+          "status": "yellow"
         },
         {
           "date": "2026-11-15",
@@ -48,17 +48,17 @@
         {
           "date": "2026-11-12",
           "day_str": "Gio 12/11",
-          "status": "green"
+          "status": "yellow"
         },
         {
           "date": "2026-11-13",
           "day_str": "Ven 13/11",
-          "status": "green"
+          "status": "yellow"
         },
         {
           "date": "2026-11-14",
           "day_str": "Sab 14/11",
-          "status": "green"
+          "status": "yellow"
         },
         {
           "date": "2026-11-15",
@@ -264,12 +264,12 @@
         {
           "date": "2026-11-13",
           "day_str": "Ven 13/11",
-          "status": "yellow"
+          "status": "green"
         },
         {
           "date": "2026-11-14",
           "day_str": "Sab 14/11",
-          "status": "yellow"
+          "status": "green"
         },
         {
           "date": "2026-11-15",
@@ -279,12 +279,12 @@
         {
           "date": "2026-11-16",
           "day_str": "Lun 16/11",
-          "status": "yellow"
+          "status": "green"
         },
         {
           "date": "2026-11-17",
           "day_str": "Mar 17/11",
-          "status": "yellow"
+          "status": "green"
         },
         {
           "date": "2026-11-18",
@@ -327,12 +327,12 @@
         {
           "date": "2026-11-17",
           "day_str": "Mar 17/11",
-          "status": "red"
+          "status": "yellow"
         },
         {
           "date": "2026-11-18",
           "day_str": "Mer 18/11",
-          "status": "yellow"
+          "status": "green"
         }
       ]
     }
